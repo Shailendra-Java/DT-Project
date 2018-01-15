@@ -1,5 +1,8 @@
 <html>
+<head>
+	<title>e-mart</title>
+</head>
 <body>
-<h2>Hello World!</h2>
+	<%@include file="header.jsp" %>
 </body>
 </html>
