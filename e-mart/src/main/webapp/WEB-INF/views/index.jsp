@@ -69,7 +69,7 @@
     </a>
 </div>
   
-<div class="container text-center">    
+<div class="container text-center"> 
   <h3>Today's Deal</h3><br>
   <div class="row">
     <div class="col-sm-4">

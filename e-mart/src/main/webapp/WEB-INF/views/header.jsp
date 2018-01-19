@@ -25,7 +25,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+        <li class="active"><a href="index"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -37,7 +37,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="getLogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
