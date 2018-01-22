@@ -15,6 +15,11 @@
   </properties>
   <dependencies>
   
+  	<dependency>
+  		<groupId>com.niit.dt_training</groupId>
+  		<artifactId>e-mart-backend</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   	<!-- Spring Core -->
   	<dependency>
     	<groupId>org.springframework</groupId>
@@ -121,7 +126,7 @@
                 <executable>C:\Program Files (x86)\Java\jdk1.8.0_45\bin\javac.exe</executable>
             </configuration>
         </plugin>
-      
+              
         <plugin>
           <groupId>org.apache.tomcat.maven</groupId>
           <artifactId>tomcat8-maven-plugin</artifactId>
