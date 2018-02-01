@@ -1,5 +1,11 @@
+D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\backend\daoimpl\CategoryDaoImpl.java
+D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\backend\model\Supplier.java
+D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\backend\model\Category.java
 D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\niit\dt_training\e_mart_backend\App.java
-D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\daoimpl\UserDaoImpl.java
+D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\backend\dao\SupplierDao.java
+D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\backend\dao\CategoryDao.java
+D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\backend\daoimpl\UserDaoImpl.java
 D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\config\HibernateConfig.java
-D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\model\User.java
-D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\dao\UserDao.java
+D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\backend\daoimpl\SupplierDaoImpl.java
+D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\backend\model\User.java
+D:\Workstation\GitHub\DT-Project\e-mart-backend\src\main\java\com\backend\dao\UserDao.java

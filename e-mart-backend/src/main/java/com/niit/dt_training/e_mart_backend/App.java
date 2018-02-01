@@ -7,9 +7,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import com.dao.UserDao;
-import com.daoimpl.UserDaoImpl;
-import com.model.User;
+import com.backend.dao.UserDao;
+import com.backend.daoimpl.UserDaoImpl;
+import com.backend.model.User;
 
 /**
  * Hello world!

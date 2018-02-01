@@ -22,8 +22,6 @@
 			<context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
 	</context:component-scan>
 	 <context:component-scan base-package="com.*"></context:component-scan>
-	   
-	<context:component-scan base-package="com.model"></context:component-scan>
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
 		<property name="prefix" value="/WEB-INF/views/"/>
@@ -31,7 +29,7 @@
 	</bean>
 	
 	<mvc:view-controller path="/" view-name="index" />
-	<mvc:resources mapping="/images/**" location="/images/"/>
-	<mvc:resources mapping="/styles/**" location="/styles/"/>
+	<mvc:resources location="/resources/" mapping="/resources/**" />
 	<mvc:default-servlet-handler />
+	
 </beans>

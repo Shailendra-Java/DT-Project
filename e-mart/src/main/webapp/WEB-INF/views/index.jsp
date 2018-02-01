@@ -1,3 +1,9 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+
+<spring:url var="css" value="/resources/css" />
+<spring:url var="images" value="/resources/images" />
+<c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 <html>
 <head>
 	<title>e-mart</title>
@@ -44,17 +50,17 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="images/img1.jpg" alt="Image">     
+        <img src="${images}/img1.jpg" alt="Image">     
       </div>
 
       <div class="item">
-        <img src="images/img2.jpg" alt="Image">     
+        <img src="${images}/img2.jpg" alt="Image">     
       </div>
     <div class="item">
-        <img src="images/img3.jpg" alt="Image">     
+        <img src="${images}/img3.jpg" alt="Image">     
       </div>
     <div class="item">
-        <img src="images/img4.jpg" alt="Image">      
+        <img src="${images}/img4.jpg" alt="Image">      
       </div>
     </div>
 
@@ -73,56 +79,56 @@
   <h3>Today's Deal</h3><br>
   <div class="row">
     <div class="col-sm-4">
-      <img src="images/kid1.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img src="${images}/kid1.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>30% off</p>
       <h3>&#x20B9; 450</h3>
       <h4 class="h">Kids dresses </h4>
     </div>
     <div class="col-sm-4"> 
-      <img src="images/kid2.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img src="${images}/kid2.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>30% off</p> 
       <h3>&#x20B9; 950</h3> 
       <h4 class="h">Girl dresses </h4>  
     </div>
    <div class="col-sm-4">
-      <img src="images/kid3.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img src="${images}/kid3.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>30% off</p>
       <h3>&#x20B9; 650</h3>
       <h4 class="h">Kids dresses </h4>
     </div>
     <div class="col-sm-4"> 
-      <img src="images/men1.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img src="${images}/men1.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>20% off</p> 
       <h3>&#x20B9; 1450</h3>   
       <h4 class="h">Men's casual shirt </h4>
     </div>
     <br>
     <div class="col-sm-4">
-      <img src="images/men2.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img src="${images}/men2.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>20% off</p>
       <h3>&#x20B9; 1650</h3>
       <h4 class="h">Men's printed shirt </h4>
     </div>
     <div class="col-sm-4"> 
-      <img src="images/men3.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img src="${images}/men3.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>20% off</p> 
       <h3>&#x20B9; 1299</h3>   
       <h4 class="h">Men's formal shirt </h4>
     </div>
     <div class="col-sm-4">
-      <img src="images/w1.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img src="${images}/w1.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>10% off</p>
       <h3>&#x20B9; 2450</h3>
       <h4 class="h">Women's night wear </h4>
     </div>
     <div class="col-sm-4"> 
-      <img src="images/w2.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img src="${images}/w2.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>10% off</p>
       <h3>&#x20B9; 1450</h3>    
       <h4 class="h">Women's gown</h4>
     </div>
     <div class="col-sm-4"> 
-      <img src="images/w3.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <img src="${images}/w3.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>10% off</p>
       <h3>&#x20B9; 3450</h3>    
       <h4 class="h">Women's saree </h4>
