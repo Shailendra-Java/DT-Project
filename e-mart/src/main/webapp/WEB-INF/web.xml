@@ -9,6 +9,16 @@
     	<param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
     </context-param>
   
+  <security-constraint>
+
+	<web-resource-collection>
+		<web-resource-name>e-mart</web-resource-name>
+		<url-pattern>/*</url-pattern>
+		<http-method>GET</http-method>
+	</web-resource-collection>
+ </security-constraint>
+  
+  
   <display-name>Archetype Created Web Application</display-name>
   
   <servlet>

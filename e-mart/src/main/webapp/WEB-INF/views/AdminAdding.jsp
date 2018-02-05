@@ -3,13 +3,26 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+
+<spring:url var="css" value="/resources/css" />
+<spring:url var="images" value="/resources/images" />
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link type="text/css" rel="stylesheet" href="/resources/nav.css" >
+  
+  <style type="text/css">
+  	.container {
+    	padding: 5px;
+    	background:#fdfdfd;
+    	box-shadow: 0px 0px 18px -3px;
+    	border:solid 1px #777;
+    	min-height: 450px;
+	}
+  </style>
 </head>
 
 <body>
@@ -17,13 +30,11 @@
 <jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
 </div>
 
-
-<div class="container"><br>
 <div class="page-header">
 <div class="container">
 <div class="row">
-<div class="col-md-6">
-<div class="panel with-nav-tabs panel-primary">
+<div class="col-md-6" style="width: 100%; margin-top: 10px; padding-left:0px; padding-right:0px;">
+<div class="panel with-nav-tabs panel-primary" style="border:none; width:100%;">
 <div class="panel-heading" style="background:#252226;">
 	<ul class="nav nav-tabs">
 		<li class="active"><a href="#tab1" data-toggle="tab">Supplier</a>
@@ -128,7 +139,6 @@
 </div>
 </div>
 </div>
-</div>
-
+<jsp:include page="/WEB-INF/views/footer.jsp"></jsp:include>
 </body>
 </html>

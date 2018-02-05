@@ -18,7 +18,10 @@ form{margin-top: 40px;}
 * {box-sizing: border-box}
 input[type=text], input[type=password] {
     width: 100%;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
@@ -55,6 +58,9 @@ button:hover {
 }
 .container {
     padding: 16px;
+    background:#fdfdfd;
+    box-shadow: 0px 0px 18px -3px;
+    border:solid 1px #777;
 }
 .clearfix::after {
     content: "";
@@ -71,7 +77,6 @@ button:hover {
 <body>
 <%@include file="header.jsp" %>
 <form:form modelAttribute="user" action="saveRegister" method="post">
-<form action="/action_page.php" style="border:1px solid #ccc">
   <div class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>

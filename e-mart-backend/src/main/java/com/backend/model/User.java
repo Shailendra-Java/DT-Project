@@ -25,21 +25,8 @@ public class User implements Serializable
 	private String address;
 	@NotBlank(message = "Please enter phone!")
 	private String phone;
-	private String enabled;
+	private boolean enabled;
 	
-	public User() {
-		
-	}
-	public User(String name, String password, String email, String role, String address, String phone, String enabled) {
-		super();
-		this.name = name;
-		this.password = password;
-		this.email = email;
-		this.role = role;
-		this.address = address;
-		this.phone = phone;
-		this.enabled = enabled;
-	}
 	public String getName() {
 		return name;
 	}
@@ -76,10 +63,10 @@ public class User implements Serializable
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public String getEnabled() {
+	public boolean getEnabled() {
 		return enabled;
 	}
-	public void setEnabled(String enabled) {
+	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
 	}
 	

@@ -29,7 +29,8 @@
 	</bean>
 	
 	<mvc:view-controller path="/" view-name="index" />
-	<mvc:resources location="/resources/" mapping="/resources/**" />
+	<mvc:resources location="/resources/css/" mapping="/resources/**" />
+	<mvc:resources location="/resources/images/" mapping="/resources/**" />
 	<mvc:default-servlet-handler />
 	
 </beans>
