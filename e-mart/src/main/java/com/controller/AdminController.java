@@ -20,6 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.backend.dao.CategoryDao;
+import com.backend.dao.ProductsDao;
 import com.backend.dao.SupplierDao;
 import com.backend.daoimpl.ProductsDaoImpl;
 import com.backend.model.Category;
@@ -38,7 +39,7 @@ public class AdminController
 	CategoryDao categoryDaoImpl;
 	
 	@Autowired
-	ProductsDaoImpl productDaoImpl;
+	ProductsDao productDaoImpl;
 	
 	@RequestMapping(value="/adding", method= {RequestMethod.GET, RequestMethod.POST})
 	public String adding()

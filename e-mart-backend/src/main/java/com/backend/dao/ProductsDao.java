@@ -10,5 +10,6 @@ public interface ProductsDao {
 	List<Products> retrieve();
 	boolean deleteProduct(int pid);
 	Products findByProductId(int pid);
+	List<Products> getProductByCategoryId(int cid);
 	void update(Products product);
 }

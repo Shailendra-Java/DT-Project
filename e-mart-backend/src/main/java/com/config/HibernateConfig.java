@@ -18,8 +18,10 @@ import com.backend.daoimpl.CategoryDaoImpl;
 import com.backend.daoimpl.SupplierDaoImpl;
 import com.backend.daoimpl.UserDaoImpl;
 import com.backend.model.Category;
+import com.backend.model.Products;
 import com.backend.model.Supplier;
 import com.backend.model.User;
+
 
 @Configuration
 @ComponentScan("com.*")
@@ -64,6 +66,7 @@ public class HibernateConfig
 		localSessionFactoryBuilder.addAnnotatedClass(User.class);
 		localSessionFactoryBuilder.addAnnotatedClass(Supplier.class);
 		localSessionFactoryBuilder.addAnnotatedClass(Category.class);
+		localSessionFactoryBuilder.addAnnotatedClass(Products.class);
 		
 		return localSessionFactoryBuilder.buildSessionFactory();
 	}

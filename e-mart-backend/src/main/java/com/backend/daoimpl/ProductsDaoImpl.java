@@ -64,6 +64,23 @@ public class ProductsDaoImpl implements ProductsDao {
 			return false;
 		}
 	}
+	
+	@Override
+	public List<Products> getProductByCategoryId(int cid) {
+		
+		Session session = sessionFactory.openSession();
+		List<Products> product = null;
+		try{
+			session.beginTransaction();
+			product = session.createQuery("from Product where cid =" +cid).list();
+			session.getTransaction().commit();
+		}
+		catch (Exception e){
+			e.printStackTrace();
+			session.getTransaction().rollback();
+		}
+		return product;
+	}
 
 	@Override
 	public Products findByProductId(int pid) {

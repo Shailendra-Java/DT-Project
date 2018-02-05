@@ -20,7 +20,7 @@ public class Category {
 	private String categoryName;
 	
 	@OneToMany(targetEntity=Products.class, fetch = FetchType.EAGER, mappedBy="category")
-	private Set<Products> products = new HashSet<>(0);
+	private Set<Products> products = new HashSet<Products>(0);
 	
 	public Set<Products> getProducts() {
 		return products;

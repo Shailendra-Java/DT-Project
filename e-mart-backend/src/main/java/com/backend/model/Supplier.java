@@ -23,8 +23,18 @@ public class Supplier implements Serializable{
 	private String supplierName;
 	
 	@OneToMany(targetEntity=Products.class, fetch = FetchType.EAGER, mappedBy="supplier")
-	private Set<Products> products = new HashSet<>(0);
+	private Set<Products> products = new HashSet<Products>(0);
 	
+	public Supplier() {}
+	
+	public Supplier(String sId, String supplierName, Set<Products> products) {
+		super();
+		this.sId = sId;
+		this.supplierName = supplierName;
+		this.products = products;
+	}
+
+
 	public Set<Products> getProducts() {
 		return products;
 	}
