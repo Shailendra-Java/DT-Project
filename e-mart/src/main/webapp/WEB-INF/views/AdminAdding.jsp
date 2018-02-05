@@ -45,7 +45,7 @@
 	<div class="panel-body">
 		<div class="tab-content">
 			<div class="tab-pane fade in active" id="tab1">
-				<form method="post" action="<c:url value="/admin/saveSupp"/>"class="form-signin">
+				<form method="post" action="<c:url value="/saveSupp"/>"class="form-signin">
 				<span id="reauth-email" class="reauth-email"></span>
 				<h4 class="input-title">Supplier Id</h4><br>
 				<input class="form-control" type="number" name="sid" required/>
@@ -60,7 +60,7 @@
 				</form>
 			</div>
 			<div class="tab-pane fade" id="tab2">
-				<form method="post" action="<c:url value="/admin/saveCat"/>"class="form-signin">
+				<form method="post" action="<c:url value="/saveCat"/>"class="form-signin">
 				<span id="reauth-email" class="reauth-email"></span>
 				<h4 class="input-title">Category Id</h4><br>
 				<input class="form-control" type="number" name="cid" required/>
@@ -76,19 +76,20 @@
 			</div>
 			
 			<div class="tab-pane fade" id="tab3">
-				<form method="post" action="<c:url value="/admin/saveProduct"/>"class="form-signin" enctype="multipart/form-part">
+				<form method="post" action="<c:url value="/saveProduct"/>"class="form-signin" enctype="multipart/form-data">
 				<span id="reauth-email" class="reauth-email"></span>
-				<h4 class="input-title">Product Id</h4><br>
-				<input class="form-control" type="number" name="pName" required/><br> 
+				
+				<h4 class="input-title">Product Name</h4><br>
+				<input class="form-control" type="text" name="productName" required/><br> 
 				
 				<h4 class="input-title">Product Desciption</h4><br>
-				<input class="form-control" type="text" name="pDescription" required/>
+				<input class="form-control" type="text" name="description" required/>
 				
 				<h4 class="input-title">Product price</h4><br>
-				<input class="form-control" type="number" name="pPrice" required/>
+				<input class="form-control" type="number" name="price" required/>
 				
 				<h4 class="input-title">Product stock</h4><br>
-				<input class="form-control" type="number" name="pStock" required/>
+				<input class="form-control" type="number" name="stock" required/>
 				
 				<div class="form-group">
 				<table>
@@ -98,7 +99,7 @@
 					<select class="form-control" name="pSupplier" required>
 					<option value="">---Select Supplier</option>
 					<c:forEach items="${satList }" var="sat">
-					<option value="${sat.sid}">${sat.supplierName }</option>
+					<option value="${sat.sId}">${sat.supplierName }</option>
 					</c:forEach>
 					</select>
 				</tr>
@@ -113,7 +114,7 @@
 					<select class="form-control" name="pCategory" required>
 					<option value="">---Select Category</option>
 					<c:forEach items="${catList }" var="cat">
-					<option value="${cat.cid}">${cat.cname}</option>
+					<option value="${cat.cid}">${cat.categoryName}</option>
 					</c:forEach>
 					</select>
 				</tr>

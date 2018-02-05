@@ -84,17 +84,17 @@ button:hover {
 
     <div class="form-group">   
     <label><b>Name</b></label>
-    <form:input path="name" type="text" class="form-control" placeholder="Enter name" name="name" />
+    <form:input path="name" type="text" class="form-control" placeholder="Enter name" name="name" required/>
     </div>
     
     <div class="form-group">
     <label><b>Email</b></label>
-    <form:input path="email" type="text" class="form-control" placeholder="Enter Email" name="email" />
+    <form:input path="email" type="text" class="form-control" placeholder="Enter Email" name="email" required/>
     </div>
     
     <div class="form-group">
     <label><b>Password</b></label>
-    <form:input path="password" type="password" class="form-control" placeholder="Enter password" name="password" />
+    <form:input path="password" type="password" class="form-control" placeholder="Enter password" name="password" required/>
     </div>
     
     <div class="form-group">
@@ -104,17 +104,13 @@ button:hover {
     
     <div class="form-group">
     <label><b>Phone</b></label>
-    <form:input path="phone" class="form-control" placeholder="Enter phone number" name="phone"  />
+    <form:input path="phone" class="form-control" placeholder="Enter phone number" name="phone"  required/>
     </div>
-    
-    <label>
-      <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
-    </label>
-    
+        
     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="reset" class="cancelbtn">Cancel</button>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </div>

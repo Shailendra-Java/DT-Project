@@ -22,7 +22,6 @@ import org.springframework.web.servlet.ModelAndView;
 import com.backend.dao.CategoryDao;
 import com.backend.dao.ProductsDao;
 import com.backend.dao.SupplierDao;
-import com.backend.daoimpl.ProductsDaoImpl;
 import com.backend.model.Category;
 import com.backend.model.Products;
 import com.backend.model.Supplier;
@@ -49,14 +48,14 @@ public class AdminController
 	
 	@RequestMapping(value="/saveSupp", method=RequestMethod.POST)
 	@Transactional
-	public ModelAndView saveSuppData(@RequestParam("sId")String sId, @RequestParam("sname")String sname)
+	public ModelAndView saveSuppData(@RequestParam("sid")String sId, @RequestParam("sname")String sname)
 	{
 		ModelAndView modelAndView = new ModelAndView();
 		Supplier suplier = new Supplier();
 		suplier.setsId(sId);
 		suplier.setSupplierName(sname);
 		supplierDaoImpl.insertSupplier(suplier);
-		modelAndView.setViewName("model");
+		modelAndView.setViewName("status");
 		return modelAndView;
 		
 	}
@@ -70,7 +69,7 @@ public class AdminController
 		category.setCid(cid);
 		category.setCategoryName(cname);
 		categoryDaoImpl.insertCategory(category);
-		modelAndView.setViewName("modal");
+		modelAndView.setViewName("status");
 		return modelAndView;
 	}
 	
@@ -78,10 +77,10 @@ public class AdminController
 	public String saveProd(HttpServletRequest request, @RequestParam("file")MultipartFile file)
 	{
 		Products product = new Products();
-		product.setProductName(request.getParameter("pName"));
-		product.setPrice(Float.parseFloat(request.getParameter("pPrice")));
-		product.setDescription(request.getParameter("pDescription"));
-		product.setStock(Integer.parseInt(request.getParameter("pStock")));
+		product.setProductName(request.getParameter("productName"));
+		product.setPrice(Float.parseFloat(request.getParameter("price")));
+		product.setDescription(request.getParameter("description"));
+		product.setStock(Integer.parseInt(request.getParameter("stock")));
 		product.setCategory(categoryDaoImpl.findByCatId(request.getParameter("pCategory")));
 		product.setSupplier(supplierDaoImpl.findBySupplierId(request.getParameter("pSupplier")));
 
@@ -102,7 +101,7 @@ public class AdminController
 		catch(IOException e){
 			e.printStackTrace();
 		}
-		return "model";
+		return "status";
 	}
 			
 	@ModelAttribute

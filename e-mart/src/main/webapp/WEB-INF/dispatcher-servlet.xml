@@ -17,7 +17,7 @@
     
 	<context:annotation-config/>
 	 <mvc:default-servlet-handler/>
-	   <mvc:annotation-driven></mvc:annotation-driven>
+	   
 	<context:component-scan base-package="com.controller">
 			<context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
 	</context:component-scan>
@@ -28,9 +28,14 @@
 		<property name="suffix" value=".jsp"/>
 	</bean>
 	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	<property name="maxUploadSize" value="300000000" >
+	</property></bean>
+	
 	<mvc:view-controller path="/" view-name="index" />
-	<mvc:resources location="/resources/css/" mapping="/resources/**" />
-	<mvc:resources location="/resources/images/" mapping="/resources/**" />
-	<mvc:default-servlet-handler />
+	<mvc:resources location="/assets/" mapping="/assets/**" cache-period="31556926"/>
+	<mvc:resources location="/assets/css/" mapping="/css/**" cache-period="31556926"/>
+	<mvc:resources location="/assets/images/" mapping="/assets/**" cache-period="31556926"/>
+	<mvc:annotation-driven/>
 	
 </beans>
