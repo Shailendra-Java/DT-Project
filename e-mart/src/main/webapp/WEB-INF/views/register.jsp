@@ -84,17 +84,17 @@ button:hover {
 
     <div class="form-group">   
     <label><b>Name</b></label>
-    <form:input path="name" type="text" class="form-control" placeholder="Enter name" name="name" required/>
+    <form:input path="name" type="text" class="form-control" placeholder="Enter name" name="name" required="true"/>
     </div>
     
     <div class="form-group">
     <label><b>Email</b></label>
-    <form:input path="email" type="text" class="form-control" placeholder="Enter Email" name="email" required/>
+    <form:input path="email" type="text" class="form-control" placeholder="Enter Email" name="email" required="true"/>
     </div>
     
     <div class="form-group">
     <label><b>Password</b></label>
-    <form:input path="password" type="password" class="form-control" placeholder="Enter password" name="password" required/>
+    <form:input path="password" type="password" class="form-control" placeholder="Enter password" name="password" required="true"/>
     </div>
     
     <div class="form-group">
@@ -104,7 +104,7 @@ button:hover {
     
     <div class="form-group">
     <label><b>Phone</b></label>
-    <form:input path="phone" class="form-control" placeholder="Enter phone number" name="phone"  required/>
+    <form:input path="phone" class="form-control" placeholder="Enter phone number" name="phone"  required="true"/>
     </div>
         
     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
