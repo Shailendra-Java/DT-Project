@@ -15,6 +15,7 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.backend.daoimpl.CategoryDaoImpl;
+import com.backend.daoimpl.ProductsDaoImpl;
 import com.backend.daoimpl.SupplierDaoImpl;
 import com.backend.daoimpl.UserDaoImpl;
 import com.backend.model.Category;
@@ -92,6 +93,13 @@ public class HibernateConfig
 	public UserDaoImpl getUserData(SessionFactory sessionFactory)
 	{
 		return new UserDaoImpl(sessionFactory);
+	}
+	
+	@Autowired
+	@Bean(name="productsDaoImpl")
+	public ProductsDaoImpl getProductData(SessionFactory sessionFactory)
+	{
+		return new ProductsDaoImpl(sessionFactory);
 	}
 
 	@Autowired

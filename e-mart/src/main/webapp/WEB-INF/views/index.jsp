@@ -38,6 +38,7 @@
 </head>
 <body>
 	<%@include file="header.jsp" %>
+	<div style="width: 100%; height:50px;"></div>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">

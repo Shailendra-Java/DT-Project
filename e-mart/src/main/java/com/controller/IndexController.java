@@ -11,7 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.backend.dao.UserDao;
 import com.backend.model.User;
-import com.model.Login;
 
 @Controller
 public class IndexController {
@@ -55,7 +54,6 @@ public class IndexController {
 	public ModelAndView getLogin() {
 		
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.addObject("lgn", new Login());
 		modelAndView.setViewName("login");
 		return modelAndView;
 	}

@@ -114,7 +114,6 @@ button:hover {
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </div>
-  </form>
 </form:form>
 <%@include file="footer.jsp" %>
 </body>

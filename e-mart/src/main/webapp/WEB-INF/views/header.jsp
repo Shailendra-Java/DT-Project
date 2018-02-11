@@ -31,22 +31,37 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="${contextRoot}/index"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+        <li><a href="${contextRoot}/admin/adding">Admin</a></li>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin List<span class="caret"></span></a>
+    
+    <ul class="dropdown-menu">
+    <li><a href="${contextRoot}/admin/productList">Product</a></li>
+    <li><a href="${contextRoot}/admin/supplierList">Supplier</a></li>
+    <li><a href="${contextRoot}/admin/categoryList">Category</a></li>
+    </ul>
+    </li> 
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Jeans</a></li>
-            <li><a href="#">Shirts</a></li>
-            <li><a href="#">Shoes</a></li>
+            <c:forEach var="catVAL" items="${catList}">
+    			<li><a href="${pageContext.request.contextPath}/productCustList?cid=${catVal.cid}">${catVal.cname}</a></li>
+    
+    		</c:forEach>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="goToRegister"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="getLogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+     <c:if test="${pageContext.request.userPrincipal.name==null }">
+    	<li><a href = "${pageContext.request.contextPath }/goToRegister">Register</a></li>
+    	<li><a href = "${pageContext.request.contextPath }/getLogin">Login</a></li>
+    </c:if>
+    
+    <c:if test="${pageContext.request.userPrincipal.name!=null }">
+    <li><a href = "${pageContext.request.contextPath }/logout">Logout</a></li>
+    </c:if>
       </ul>
     </div>
   </div>
 </nav>
-
 </body>
 </html>
