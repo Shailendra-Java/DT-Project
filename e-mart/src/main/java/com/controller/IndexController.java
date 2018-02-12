@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+<<<<<<< HEAD
+import com.dao.UserDao;
+import com.model.User;
+=======
 import com.backend.dao.UserDao;
 import com.backend.model.User;
+>>>>>>> 635e33e1da1e42670cc27011c53d8bfcd012f5aa
 
 @Controller
 public class IndexController {

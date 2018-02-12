@@ -15,7 +15,7 @@ import com.model.Category;
 import com.model.Supplier;
 
 @Repository
-@Service
+@Service("categoryDaoImpl")
 public class CategoryDaoImpl implements CategoryDao {
 
 	@Autowired

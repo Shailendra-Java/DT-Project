@@ -6,8 +6,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.backend.dao.SupplierDao;
-import com.backend.model.Supplier;
+import com.dao.SupplierDao;
+import com.model.Supplier;
 
 public class SupplierTestCase {
 

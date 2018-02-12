@@ -19,12 +19,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.backend.dao.CategoryDao;
-import com.backend.dao.ProductsDao;
-import com.backend.dao.SupplierDao;
-import com.backend.model.Category;
-import com.backend.model.Products;
-import com.backend.model.Supplier;
+import com.dao.CategoryDao;
+import com.dao.ProductsDao;
+import com.dao.SupplierDao;
+import com.model.Category;
+import com.model.Products;
+import com.model.Supplier;
 
 
 @Controller

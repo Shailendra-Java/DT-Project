@@ -16,7 +16,7 @@ import com.model.Products;
 import com.model.Supplier;
 
 @Repository
-@Service
+@Service("productDaoImpl")
 public class ProductsDaoImpl implements ProductsDao {
 
 	@Autowired

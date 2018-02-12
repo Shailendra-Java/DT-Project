@@ -14,6 +14,16 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+<<<<<<< HEAD
+import com.daoimpl.CategoryDaoImpl;
+import com.daoimpl.ProductsDaoImpl;
+import com.daoimpl.SupplierDaoImpl;
+import com.daoimpl.UserDaoImpl;
+import com.model.Category;
+import com.model.Products;
+import com.model.Supplier;
+import com.model.User;
+=======
 import com.backend.daoimpl.CategoryDaoImpl;
 import com.backend.daoimpl.ProductsDaoImpl;
 import com.backend.daoimpl.SupplierDaoImpl;
@@ -22,6 +32,7 @@ import com.backend.model.Category;
 import com.backend.model.Products;
 import com.backend.model.Supplier;
 import com.backend.model.User;
+>>>>>>> 635e33e1da1e42670cc27011c53d8bfcd012f5aa
 
 
 @Configuration

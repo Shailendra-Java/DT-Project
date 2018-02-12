@@ -6,8 +6,8 @@ import com.model.Category;
 
 public interface CategoryDao {
 
-	public void insertCategory(Category category);
-	public Category findByCatId(String cid);
-	public List<Category> retrieve();
+	void insertCategory(Category category);
+	Category findByCatId(String cid);
+	List<Category> retrieve();
 	
 }
