@@ -78,6 +78,13 @@
     	<version>${spring.version}</version>
 	</dependency>
   	
+  	<!-- Spring Beans -->
+  	<dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-beans</artifactId>
+    	<version>4.3.12.RELEASE</version>
+	</dependency>
+  	
 	<!-- Servlet  -->
 	<dependency>
     	<groupId>javax.servlet</groupId>
